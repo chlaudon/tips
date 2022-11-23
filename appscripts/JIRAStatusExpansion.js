@@ -1,6 +1,4 @@
 
-
-
 function getTicketStatus (statuses, ticket) {
   for(var si=0; si < statuses.length; si++)
     if(statuses[si][1] == ticket)
@@ -8,6 +6,12 @@ function getTicketStatus (statuses, ticket) {
   
 }
 
+/*
+  This function enriches lists of JIRA tickets with their status
+  jira_compose_sheet => the sheet in which 1st col contains a list of tickets
+  jira_status_sheet => sheet that contains the JIRA statuses (fetched using the JIRA() function)
+  updates the 2nd col in jira_compose_sheet with enriched ticket info
+*/
 function main ()
 {
   var JIRARegexp = /(\w*-\d*)/ig;
