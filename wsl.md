@@ -6,6 +6,10 @@
 * Look for `LxssManager`, get process ID
 * Go to Windows task list, Details pane, find process and kill it
 
+OR
+
+In Powershell, `wsl --shutdown`
+
 ## Install Powerline fonts
 https://logfetch.com/wsl2-install-powerline/
 
