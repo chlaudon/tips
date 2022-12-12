@@ -6,7 +6,7 @@
 * Look for `LxssManager`, get process ID
 * Go to Windows task list, Details pane, find process and kill it
 
-OR, run Powershell in Admin mode
+OR, in  Powershell  Admin mode
 
 `Get-Service LxssManager | Restart-Service`
 
