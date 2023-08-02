@@ -1,0 +1,16 @@
+
+# connect kubectl to cluster
+
+az aks get-credentials --resource-group dev-rg-kube01 --name dev-kube03
+/home/chrisl/.kube/config has permissions "644".
+It should be readable and writable only by its owner.
+Merged "dev-kube03" as current context in /home/chrisl/.kube/config
+
+# install kubelogin
+
+download kubelogin-linux-arm64.zip from https://github.com/Azure/kubelogin/releases
+unpack, move kubelogin to ~/bin/kubelogin
+chmod +x  ~/bin/kubelogin
+
+# get prompt in container
+kubectl exec -it extconfig-api-5d5d96f5f8-g74gn -c extconfig-api -n platform-dev -- /bin/sh
