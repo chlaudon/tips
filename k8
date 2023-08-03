@@ -1,4 +1,5 @@
 
+
 # connect kubectl to cluster
 
 az aks get-credentials --resource-group dev-rg-kube01 --name dev-kube03
@@ -17,3 +18,7 @@ kubectl exec -it extconfig-api-5d5d96f5f8-g74gn -c extconfig-api -n platform-dev
 
 # get last events for namespace
 kubectl get events --sort-by=".metadata.managedFields[0].time" -n platform-stage
+
+# set working namespace
+kubectl config set-context --current --namespace=my-namespace
+
