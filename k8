@@ -14,3 +14,6 @@ chmod +x  ~/bin/kubelogin
 
 # get prompt in container
 kubectl exec -it extconfig-api-5d5d96f5f8-g74gn -c extconfig-api -n platform-dev -- /bin/sh
+
+# get last events for namespace
+kubectl get events --sort-by=".metadata.managedFields[0].time" -n platform-stage
