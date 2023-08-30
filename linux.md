@@ -62,3 +62,16 @@ jq -r  '.[] | . as $reco |
         @tsv' cross_sell_content_lenovo_recommends_*.json |
         awk -F '\t' -v OFS='\t' '{print "(\x27"$1"\x27,\x27"$2"\x27),"}' > recos.txt
 ```
+
+## Monitor CPU/mem over a long time
+
+
+The following sar command will log memory usage (-r option) and CPU usage (-u option) to output file mem.log (-o option) at 60 second intervals.
+
+sar -r -u -o mem.log 60 > /dev/null 2>&1
+
+This file is binary and can only be decoded using the sar command.
+
+CPU consumption: `sar -f mem.log | more`
+Memory consumption (-r option): `sar -r -f mem.log | more`
+
