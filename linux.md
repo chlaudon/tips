@@ -70,8 +70,9 @@ The following sar command will log memory usage (-r option) and CPU usage (-u op
 
 sar -r -u -o mem.log 60 > /dev/null 2>&1
 
-This file is binary and can only be decoded using the sar command.
+This file is binary and can only be decoded using the sar command:
 
 CPU consumption: `sar -f mem.log | more`
+
 Memory consumption (-r option): `sar -r -f mem.log | more`
 
