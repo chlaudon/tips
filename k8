@@ -22,3 +22,10 @@ kubectl get events --sort-by=".metadata.managedFields[0].time" -n platform-stage
 # set working namespace
 kubectl config set-context --current --namespace=my-namespace
 
+# azure & kube, setting up to work in a cluster:
+
+az login
+az acr login --name ccsdev --expose-token
+az account set --subscription ba3d79fe-a2da-4bf4-b2e4-152cf5ff6be9
+az aks get-credentials --resource-group dev-rg-kube01 --name dev-kube03
+
