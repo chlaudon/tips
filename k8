@@ -26,6 +26,7 @@ kubectl config set-context --current --namespace=my-namespace
 
 az login
 az acr login --name ccsdev --expose-token
-az account set --subscription ba3d79fe-a2da-4bf4-b2e4-152cf5ff6be9
+az account set --subscription ba3d79fe-a2da-4bf4-b2e4-152cf5ff6be9 <==== for dev
+az account set --subscription ab258455-9f15-415c-a1cd-f1f11863652d <==== for prod
 az aks get-credentials --resource-group dev-rg-kube01 --name dev-kube03
 
