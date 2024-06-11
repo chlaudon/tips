@@ -14,7 +14,8 @@ mkdir formatted; ls -1 *fr.xml | xargs -l bash -c 'xmllint --format $0 > formatt
 ```
 ## Call URLs defined in a file
 
-$ head list.txt
+```
+head list.txt
 https://cdn.cs.1worldsync.com/73/B1/73B1686C-9F40-4768-8D1F-BA5BE1466167.jpg
 https://cdn.cs.1worldsync.com/7A/59/7A59D591-2523-4824-99EE-B543BF5142E1.jpg
 https://cdn.cs.1worldsync.com/CD/3C/CD3C2826-6D64-4611-A37C-A1D53617AD3F.jpg
@@ -26,8 +27,8 @@ https://cdn.cs.1worldsync.com/A6/D8/A6D85B1F-4C0A-4884-8FCC-6B68F7495203.jpg
 https://cdn.cs.1worldsync.com/13/19/1319E844-1A34-45B3-874A-9B028173A971.jpg
 https://cdn.cs.1worldsync.com/C0/81/C08148E3-748C-4E63-B219-8FADE4DAB64E.jpg
 
-catt list.txt | xargs -i curl -i -X POST "https://api.fastly.com/purge/{}" -H "Fastly-Key: -gx0w12QcBn_NbnCPGe0oFPIMPeTsG85" -H "fastly-soft-purge: 1" -H "Accept: application/json"
-
+cat list.txt | xargs -i curl -i -X POST "https://api.fastly.com/purge/{}" -H "Fastly-Key: -gx0w12QcBn_NbnCPGe0oFPIMPeTsG85" -H "fastly-soft-purge: 1" -H "Accept: application/json"
+```
 
 # JQ
 
