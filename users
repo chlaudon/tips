@@ -58,7 +58,14 @@ Password: 58dN66G4uY7
 Link including username/password:
 sftp://SHIPushUS:58dN66G4uY7@sftp.cs.1worldsync.com/
 
-
+    <add key="asa-url" value="https://contentconnector.cs.1worldsync.com/asa/utf8/cds_asa.zip"/>
+    <add key="ftp-server" value="sftp.cs.1worldsync.com"/>
+    <add key="ftp-use-sftp" value="true"/>
+    <add key="ftp-port" value="22"/>
+    <add key="ftp-results" value="true"/>
+    <add key="ftp-login" value="C07144"/>
+    <add key="ftp-password" value="Dix77c52LD5"/>
+    <add key="ftp-remote-folder" value="StiboStep5"/>
 
 
 
