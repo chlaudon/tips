@@ -68,4 +68,14 @@ sftp://SHIPushUS:58dN66G4uY7@sftp.cs.1worldsync.com/
     <add key="ftp-remote-folder" value="StiboStep5"/>
 
 
+     <add key="asa-url" value="https://contentconnector.cs.1worldsync.com/asa/utf8/cds_asa.zip"/>
+    <add key="ftp-server" value="sftp.cs.1worldsync.com"/>
+    <add key="ftp-use-sftp" value="true"/>
+    <add key="ftp-port" value="22"/>
+    <add key="ftp-results" value="true"/>
+    <add key="ftp-login" value="C18112"/>
+    <add key="ftp-password" value="T251R4x532X"/>
+    <add key="ftp-remote-folder" value="ccsxml"/>
+
+
 
